@@ -45,7 +45,7 @@
   <form name="tasks">
     <label>
       <input name="task" type="checkbox" checked disabled />
-      <a href="https://github.com/thinkerers/theophile.dev/blob/main/.github/workflows/main.yml">Utilisation de github action</a> pour push le code de mon site depuis un repo github vers mon hébergement OVH
+      <a href="https://github.com/thinkerers/theophile.dev/blob/main/.github/workflows/main.yml">Utilisation de github action</a> pour push le code de mon site depuis un repo github vers mon hébergement OVH via FTP
     </label>
     <label>
       <input name="task" type="checkbox" checked disabled />
