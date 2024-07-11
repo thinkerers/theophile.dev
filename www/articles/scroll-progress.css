@@ -1,0 +1,129 @@
+/* Explanation stuff */
+
+:root{
+    font-family:system-ui;
+}
+
+article {
+min-height:150vh;
+display: grid;
+grid-auto-rows:min-content;
+grid-template-columns: [article-start] 1fr [content-start]  clamp(10ch, 60%, 100ch) [content-end] 1fr [article-end];
+  justify-items:center;
+
+}
+
+article > * {
+  grid-column:content;
+}
+
+h1 {
+  font-size:3rem;
+}
+
+figure {
+  grid-column:article;
+  display:flex;
+  max-width:800px;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  gap:1ch;
+  &>* {
+    flex:1;
+  }
+  
+  & figcaption{
+    flex-basis:100%;
+    text-align:center;
+    font-style:italic;
+  }
+
+  & style {
+    padding:1ch;
+    background:rgb(29, 30, 34);
+    color:rgb(243, 243, 243);
+    min-width:clamp(10ch, 60%, 100ch);
+    font-family: monospace;
+    white-space: pre-wrap;
+/*     width:clamp(10ch, 60%, 100ch); */
+    &::spelling-error{
+      text-decoration:none;
+    }
+  }
+  
+  & svg{
+    min-width:200px;
+}
+}
+
+
+[href^="https://dev.to"]{
+  position:fixed;
+  bottom:0;
+  right:0;
+  height:1lh;
+  aspect-ratio:4/3;
+  background:url("https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+a {
+  text-decoration:none;
+  font-weight:bold;
+  
+  &:hover{
+    color:highlight;
+  }
+}
+
+[data-animate]{
+  text-decoration:dotted underline 1px;
+  &:hover{
+    background:highlight;
+    color:highlighttext;
+  }
+}
+
+:root:has([data-animate="linear-gradient"]:hover) [stroke="#fa0"] {
+ stroke-width: 20px;
+  stroke-dasharray: 15%, 11%;
+ animation: dash 1s linear infinite; 
+
+}
+
+:root:has([data-animate="clip path"]:hover) #clip-path-outline {
+  stroke-width: 20px;
+  stroke-dasharray: 15%, 11%;
+  animation: dash 1s linear infinite;
+}
+
+svg :nth-child(2 of [stroke="#fa0"]) {
+  opacity:0;
+}
+
+:root:has([data-animate="scroll"]:hover) path{
+  &:nth-child(1 of [stroke="#fa0"]) {
+  animation: scroll 2s linear forwards;
+}
+   &:nth-child(2 of [stroke="#fa0"]) {
+  opacity:.33;
+}
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    /* Adjust this value to match the stroke dash pattern for a seamless loop */
+    stroke-dashoffset: 26%;
+  }
+}
+
+@keyframes scroll {
+  to {
+    translate:0 51%;
+  }
+}
