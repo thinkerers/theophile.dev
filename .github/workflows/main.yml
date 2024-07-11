@@ -14,3 +14,8 @@ jobs:
         server: ftp.cluster029.hosting.ovh.net
         username: theophv
         password: ${{ secrets.ftp_password }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          README.md
