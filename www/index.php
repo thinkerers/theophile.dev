@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Découvrez le portfolio de Théophile, un développeur web front-end mettant en avant des performances web de premier ordre, l'accessibilité, les meilleures pratiques et le SEO. Contactez pour une collaboration ou consultez le rapport HTTP Observatory.">
   <title>Théophile - Dev web front end</title>
-  <link rel="stylesheet" href="styles.css" rel="preload" as="style">
+  <link href="styles.css" rel="preload" as="style">
   <link rel="icon" href="favicon.svg">
   <script type="application/ld+json">
     {
@@ -44,23 +44,27 @@
 
   <form name="tasks">
     <label>
-      <input name="task" type="checkbox" checked disabled />
+      <input name="task" type="checkbox" checked disabled>
+      Code validé avec <a href="https://validator.w3.org/nu/?doc=https://theophile.dev/&submit=Check">nu validator</a>
+    </label>
+    <label>
+      <input name="task" type="checkbox" checked disabled>
       <a href="https://github.com/thinkerers/theophile.dev/blob/main/.github/workflows/main.yml">Utilisation de github action</a> pour push le code de mon site depuis un repo github vers mon hébergement OVH via FTP
     </label>
     <label>
-      <input name="task" type="checkbox" checked disabled />
+      <input name="task" type="checkbox" checked disabled>
       Ajout de <a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Ftheophile.dev%2F">résultat enrichis</a> pour afficher mon "logo" (temporairement un emoji) dans les résultats de recherche google
     </label>
     <label>
-      <input name="task" type="checkbox" checked disabled />
+      <input name="task" type="checkbox" checked disabled>
       Demande d'indexation sur <a href="https://search.google.com/search-console">google search console</a>, <a href="/sitemap.xml">sitemap</a> et <a href="/robots.txt">robots.txt</a> créés
     </label>
     <label>
-      <input name="task" type="checkbox" checked disabled />
+      <input name="task" type="checkbox" checked disabled>
       <a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Ftheophile.dev%2F">PageSpeed Insights: 100 Performance, 100 Accessibility, 100 Best Practices, 100 SEO</a>
     </label>
     <label>
-      <input name="task" type="checkbox" checked disabled />
+      <input name="task" type="checkbox" checked disabled>
       <a href="https://developer.mozilla.org/en-US/observatory/analyze?host=theophile.dev">HTTP Observatory Report</a>: Score: 135 / 100
     </label>
   </form>
