@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Découvrez le portfolio de Théophile, un développeur web front-end mettant en avant des performances web de premier ordre, l'accessibilité, les meilleures pratiques et le SEO. Contactez pour une collaboration ou consultez le rapport HTTP Observatory.">
   <title>Théophile - Dev web front end</title>
-  <link href="styles.css" rel="preload" as="style">
+  <link rel="preload stylesheet" href="styles.css" as="style" />
   <link rel="icon" href="favicon.svg">
   <script type="application/ld+json">
     {
