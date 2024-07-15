@@ -1,32 +1,54 @@
 # Force HTTPS (Redirect all HTTP traffic to HTTPS)
 RewriteEngine On
-RewriteCond %{ENV:HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Check if HTTPS is not on and redirect to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# Redirect to www/public/index.php if the request is for the root directory
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /www/public/index.php [L]
+
+# Redirect all other requests to index.php if file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /www/public/index.php [L]
+
+ErrorDocument 500 /www/public/error.php
+
+php_value  default_charset     "utf-8"
+# php_value  max_execution_time  30
+# php_value  memory_limit        20M
+# php_flag   file_uploads        on
+# php_value  post_max_size       5M
+# php_value  upload_max_filesize 5M
+php_value  error_reporting     -1 
+php_flag   display_errors      on
+php_flag   log_errors          on
+
 
 <IfModule mod_headers.c>
+    AddDefaultCharset UTF-8
 
- AddDefaultCharset UTF-8
+    Header set X-Content-Type-Options "nosniff"
 
- Header set X-Content-Type-Options "nosniff"
+    Header set Content-Security-Policy "default-src 'none';base-uri 'self';form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';style-src 'self';img-src 'self';"
 
- Header set Content-Security-Policy "default-src 'none';base-uri 'self';form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';style-src 'self';img-src 'self';"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
 
- Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Cross-Origin-Embedder-Policy "require-corp"
 
- Header set Cross-Origin-Embedder-Policy "require-corp"
+    Header set Cross-Origin-Opener-Policy "same-origin"
 
- Header set Cross-Origin-Opener-Policy "same-origin"
+    Header set Cross-Origin-Resource-Policy "same-origin"
+    
+    # Cache static assets for 1 year
+    <FilesMatch "\.(jpg|jpeg|png|gif|svg|css|js|woff|woff2|ttf|eot)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
 
- Header set Cross-Origin-Resource-Policy "same-origin"
-  
- # Cache static assets for 1 year
- <FilesMatch "\.(jpg|jpeg|png|gif|svg|css|js|woff|woff2|ttf|eot)$">
-  Header set Cache-Control "max-age=31536000, public, immutable"
- </FilesMatch>
-
- # Cache HTML for 1 hour
- <FilesMatch "\.html$">
-  Header set Cache-Control "max-age=3600, public"
- </FilesMatch>
-
+    # Cache HTML for 1 hour
+    <FilesMatch "\.html$">
+        Header set Cache-Control "max-age=3600, public"
+    </FilesMatch>
 </IfModule>
