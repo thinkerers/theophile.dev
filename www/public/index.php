@@ -7,10 +7,6 @@ $page = new src\controllers\Page();
 $request = trim(mb_strtolower($_SERVER['REQUEST_URI']), '/');
 $parts = explode('/', $request);
 
-echo '<pre>';
-var_dump($parts);
-echo '</pre>';
-
 try {    
     $action = match($parts[0]) {
         ''       => null,
