@@ -4,7 +4,6 @@ on:
       - main
     paths:
       - 'www/**'
-      - '.htaccess'
 name: 🚀 Deploy website on push inside the www folder
 jobs:
   web-deploy:
@@ -20,8 +19,8 @@ jobs:
           server: ftp.cluster029.hosting.ovh.net
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          local-dir: ./ 
-          server-dir: /
+          local-dir: www/
+          server-dir: www/
           exclude: |
             **/.git*
             **/.git*/**

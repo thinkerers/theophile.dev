@@ -5,16 +5,16 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
 
-# Redirect to www/www/public/index.php if the request is for the root directory
+# Redirect to www/public/index.php if the request is for the root directory
 RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^$ /www/public/index.php [L]
+RewriteRule ^$ /public/index.php [L]
 
 # Redirect all other requests to index.php if file or directory does not exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /www/public/index.php [L]
+RewriteRule . /public/index.php [L]
 
-ErrorDocument 500 /www/public/error.php
+ErrorDocument 500 /public/error.php
 
 php_value  default_charset     "utf-8"
 # php_value  max_execution_time  30
