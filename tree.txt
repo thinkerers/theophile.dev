@@ -1,0 +1,60 @@
+Folder PATH listing for volume W11_TOGO
+Volume serial number is BE13-5AB2
+C:.
+│   .htaccess
+│   LICENSE
+│   README.md
+│   tree.txt
+│   
+├───.github
+│   │   FUNDING.yml
+│   │   
+│   └───workflows
+│           main.yml
+│           
+└───www
+    │   robots.txt
+    │   sitemap.xml
+    │   
+    ├───config
+    │       config.php
+    │       
+    ├───public
+    │   │   index.php
+    │   │   
+    │   ├───css
+    │   │       styles.css
+    │   │       
+    │   ├───fonts
+    │   ├───img
+    │   │       favicon.svg
+    │   │       
+    │   ├───js
+    │   └───uploads
+    │       └───pdf
+    │               cv_infographie.pdf
+    │               
+    ├───src
+    │   │   bootstrap.php
+    │   │   
+    │   ├───controllers
+    │   │       Account.php
+    │   │       Page.php
+    │   │       
+    │   ├───lib
+    │   │       ErrorHandler.php
+    │   │       Logger.php
+    │   │       LogLevels.php
+    │   │       
+    │   └───model
+    │           Account.php
+    │           database.db
+    │           schema.sql
+    │           
+    └───templates
+            error.php
+            home.php
+            layout.php
+            login.php
+            soon.php
+            

@@ -9,7 +9,7 @@
 <span style="--animation-order: 7;">!</span>
 </h1>
 <footer>
-Merci de votre visite, mais ce site n'est pas encore tout à fait prêt. Repassez plus tard !
+Merci de votre visite, mais cette page n'est pas encore tout à fait prête. Repassez plus tard !
 </footer>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap&family=Roboto");
