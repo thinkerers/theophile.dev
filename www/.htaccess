@@ -1,7 +1,7 @@
 RewriteEngine On
 
 # Force HTTPS (Redirect all HTTP traffic to HTTPS)
-RewriteCond %{ENV:HTTPS} !on
+RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect to /public/index.php if the request is for the root directory
