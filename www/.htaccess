@@ -1,11 +1,10 @@
-# Force HTTPS (Redirect all HTTP traffic to HTTPS)
 RewriteEngine On
 
-# Check if HTTPS is not on and redirect to HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+# Force HTTPS (Redirect all HTTP traffic to HTTPS)
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirect to www/public/index.php if the request is for the root directory
+# Redirect to /public/index.php if the request is for the root directory
 RewriteCond %{REQUEST_URI} ^/$
 RewriteRule ^$ /public/index.php [L]
 
@@ -14,18 +13,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /public/index.php [L]
 
+# Custom error page
 ErrorDocument 500 /public/error.php
-
-php_value  default_charset     "utf-8"
-# php_value  max_execution_time  30
-# php_value  memory_limit        20M
-# php_flag   file_uploads        on
-# php_value  post_max_size       5M
-# php_value  upload_max_filesize 5M
-php_value  error_reporting     -1 
-php_flag   display_errors      on
-php_flag   log_errors          on
-
 
 <IfModule mod_headers.c>
     AddDefaultCharset UTF-8
