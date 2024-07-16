@@ -1,17 +1,21 @@
 RewriteEngine On
+RewriteBase /
 
 # Force HTTPS (Redirect all HTTP traffic to HTTPS)
 RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirect to /public/index.php if the request is for the root directory
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^$ /public/index.php [L]
+# Check if the request is trying to access a folder outside of /public
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/index.php [L]
 
-# Redirect all other requests to index.php if file or directory does not exist
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /public/index.php [L]
+# Check if the request is for an existing file or directory within /public
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^public/ - [L]
+
+# Redirect all other requests to /public/index.php
+RewriteRule ^public/.*$ /public/index.php [L]
 
 # Custom error page
 ErrorDocument 500 /public/error.php
