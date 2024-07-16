@@ -39,7 +39,7 @@ data-transition="<?php echo $transition ?? '' ;?>"
   </nav>
 </header>
 <main>
-<?php echo $content ?? '' ;?>
+<?= $content ?? '' ?>
 </main>
 <footer>
       <div class="icons-container">
