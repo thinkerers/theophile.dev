@@ -54,17 +54,36 @@ if(isset($scripts)){
 </head>
 <body>
 <header>
-  <h1><a href="/">theophile.dev</a></h1>
+  <figure>
+    <a href="/">
+    theophile.dev
+    </a>
+  </figure>
   <nav>
-    <a href="/login" title="Login">🔒</a>
-    <a href="/roadmap" title="Roadmap">🗺️</a>
+    <!-- 
+      Solution plus robuste:  
+      https://developer.mozilla.org/fr/docs/Web/HTML/Element/dialog
+  -->
+    <button title="Afficher la navigation"></button>
+    <ul>
+      <li><a href="#projets" title="Mes créations">projets</a></li>
+      <li><a href="#apropos" title="Mon histoire">à propos</a></li>
+      <li><a href="#contact" title="Travaillons ensemble!">contact</a></li>
+    </ul>
   </nav>
 </header>
 <main>
 <?= $content ?? '' ?>
 </main>
 <footer>
-<a href="https://github.com/thinkerers/theophile.dev">repo</a>
-</footer>
+        <small>2024, theophile.dev</small>
+        <nav>
+          <ul>
+            <li>
+            <a href="https://github.com/thinkerers/theophile.dev">repo</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
 </body>
 </html>
