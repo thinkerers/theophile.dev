@@ -2,7 +2,6 @@
 $title = 'Connexion';
 
 ob_start();
-print_r($_POST);
 ?>
 <h1>Connexion</h1>
 <form method="post">

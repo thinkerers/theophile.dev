@@ -35,6 +35,7 @@ data-transition="<?php echo $transition ?? '' ;?>"
   <h1><a href="/">theophile.dev</a></h1>
   <nav>
     <a href="/login" title="Login">Login</a>
+    <a href="/roadmap">roadmap</a>
   </nav>
 </header>
 <main>

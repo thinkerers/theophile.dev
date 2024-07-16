@@ -8,7 +8,7 @@ $request = trim(mb_strtolower($_SERVER['REQUEST_URI']), '/');
 $parts = explode('/', $request);
 
 try {    
-    $action = match($parts[0]) {
+    $action = match($parts[1] ?? "") {
         ''       => null,
         'login'  => $account->login(),
         'logout' => $account->logout(),

@@ -6,10 +6,12 @@ class Page
 {
     public function render(array $parts)
     {
-        if($parts[0] === '/login') {
-            require_once(TEMPLATE_ROOT . 'login.php');
-            return;
-        }
-        require_once(TEMPLATE_ROOT . 'home.php');
+        $page = match($parts[0]) {
+            'login'       => "login.php",
+            'roadmap'     => "roadmap.php",
+            default   => "home.php"
+        };
+
+        require_once(TEMPLATE_ROOT . $page);
     }
 }
