@@ -62,7 +62,7 @@ ob_start();
     <label>Nom<input type="text" name="nom" required></label>
     <label>Entreprise<input type="text" name="entreprise" required></label>
     <label>Email<input type="email" name="email" required></label>
-    <input type="submit" value="C'est parti !">
+    <input type="submit" value="C'est parti !" disabled title="WIP, si vous voulez me contacter envoyez moi un mail a hello@theophile.dev">
   </form>
 </section>
 <?php
