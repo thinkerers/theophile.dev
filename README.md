@@ -3,8 +3,6 @@
 
 This project showcases my (work in progress) portfolio website hosted on OVH's free 100MB hosting plan, utilizing SQLite for database management and Cloudflare's free tier for image hosting. The website is built with PHP and will incorporates various features including article management, SEO keywords, and comments.
 
-You're welcome to use it for your own website.
-
 ## Documentation
 
 The documentation for this project can be found here: [Project: Portfolio](https://learning-php-mysql.tiddlyhost.com/#:[created[20240203150245488]])
