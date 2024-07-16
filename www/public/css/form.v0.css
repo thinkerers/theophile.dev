@@ -1,80 +1,92 @@
 form {
-    margin-inline:auto;
-    max-width:500px;
-    & fieldset {
-        border: unset;
-        display: grid;
-        gap: 1rem;
+    inline-size: fit-content;
+    max-inline-size: 100vw;
+    display: inline-grid;
+    margin-inline: auto;
+    grid-template-columns: 1fr;
+    grid-gap: var(--small-gap);
 
-        & legend {
-        width:100%;
-        text-align:center;
-            margin-bottom: 0.5lh;
-            font-size: 1.5rem;
+    & *{
+        border: unset;
+        margin:0;
+        padding: 0;
+    }
+
+    & > * {
+        display: grid;
+        grid-column: -1/1;
+        grid-template-columns: subgrid;
+        
+        *:not(legend) {
+            margin-inline-start: 1ch;
+            border: none;
         }
     }
 
-    & label {
-        display: grid;
-        gap: 0.2lh;
-        grid-column: 1/-1;
-        grid-template-columns: subgrid;
+    & input:not([type="radio"],[type="submit"]), & textarea {
+        background: transparent;
+        border-block-end: solid 2px;
+        min-block-size: 3lh;
     }
 
-    & input,
-    button {
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 0.5rem;
+    & [type="radio"] {
+        accent-color:var(--primary-color);
+        label:has(&:checked, &:hover) {
+            color: ButtonText;
+            background: ButtonFace;
+            outline: solid 1px;
+            border-radius: 1pt;
+        }
+    }
+
+    & [type="submit"] {
+        inline-size: 100%;
+        grid-column: -1/1;
+        padding: 1ch;
+        background: var(--primary-color);
+        color:var(--secondary-solid-color);
+        border-radius: 2pt;
+    }
+
+    & textarea {
+        resize: vertical;
     }
     
-    & [type="submit"]{
-    cursor:pointer;
-    }
-
-    /* Visual Validation */
-    &:has([required]) {
-        --important-color:red;
-        [role="alert"] {
-        color: var(--important-color);
-        }
-        & label:has(:invalid) {
+    /* Visual validation */
+    & :has([required]:invalid) {
+            &:where(fieldset) legend, 
+            &:where(label){
             position: relative;
+
             &:before {
-                left: -1ch;
+                inset-inline-end: 100%;
                 position: absolute;
                 content: "*";
-                color: var(--important-color);
+                color: red;
             }
+        }  
+    }
 
-            &:has([type="submit"]:focus) &:nth-child(1 of :has(:invalid)) {
-                color: var(--important-color);
-
-                @media not (prefers-reduced-motion) {
-                    --amount: 5px;
-                    animation: 0.3s horizontal-shaking 0.2s;
-                }
-            }
-        }
-        &:invalid [type="submit"]{
-            opacity:.33;
-            cursor: not-allowed;
-        }
-        &:not(:invalid) [type="submit"]:active{
-            background:lightgrey;
-        }
+    &:has([type="submit"]:focus) :nth-child(1 of :has(:invalid)) {
+        color: red;
     }
 }
   
-/* Animation */
-@keyframes horizontal-shaking {
 
-    25%,
-    75% {
+/* Motions*/
+@keyframes horizontal-shaking {
+    25%,75% {
         transform: translateX(var(--amount));
     }
 
     50% {
-        transform: translateX(var(--amount) * -1);
+        transform: translateX(var(--amount)*-1);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    form:has([type="submit"]:focus) :nth-child(1 of :has(:invalid)) {
+        --amount: 5px;
+        animation: .3s horizontal-shaking 0.2s;
     }
 }
