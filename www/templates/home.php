@@ -11,6 +11,10 @@ Ce site est en cours de construction 👷‍♂️ Vous pouvez suivre mes progr�
 <form name="tasks">
 <label>
   <input name="task" type="checkbox" checked disabled>
+  Mise en place de la méthode MVC. <a href="https://learning-php-mysql.tiddlyhost.com/#:[created[20240203150245488]]">Documentation du projet</a> créée sur tiddlyhost.
+</label>
+<label>
+  <input name="task" type="checkbox" checked disabled>
   Code validé avec <a href="https://validator.w3.org/nu/?doc=https://theophile.dev/&submit=Check">nu validator</a>
 </label>
 <label>
