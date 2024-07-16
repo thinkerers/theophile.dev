@@ -26,21 +26,19 @@ ob_start();
   </article> -->
 </section>
 <section id="apropos">
-  <article>
-    <hgroup>
-      <h2><b>Théophile</b></h2>
-      <h3>Infographiste</h3>
-    </hgroup>
-    <p><em>Ma vocation:</em> Passer des idées au concrets, transmettre mes connaissances et créer des expériences captivantes et accessibles 👨‍💻</p>
-    <address>
-    <ul>
-      <li><a href="mailto:hello@theophile.dev">hello@theophile.dev</a></li>
-      <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
-      <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
-      <li><a href="https://github.com/DesignThinkerer">github</a></li>
-    </ul>
-  </address>
-  </article>
+  <hgroup>
+        <h2>Théophile</h2>
+        <b>Infographiste</b>
+      </hgroup>
+      <p><em>Ma vocation:</em> Passer des idées au concrets, transmettre mes connaissances et créer des expériences captivantes et accessibles 👨‍💻</p>
+      <address>
+      <ul>
+        <li><a href="mailto:hello@theophile.dev">hello@theophile.dev</a></li>
+        <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
+        <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
+        <li><a href="https://github.com/DesignThinkerer">github</a></li>
+      </ul>
+    </address>
 </section>
 
 <section id="contact">
@@ -64,7 +62,7 @@ ob_start();
     <label>Nom<input type="text" name="nom" required></label>
     <label>Entreprise<input type="text" name="entreprise" required></label>
     <label>Email<input type="email" name="email" required></label>
-    <input type="submit" value="C'est parti !" />
+    <input type="submit" value="C'est parti !">
   </form>
 </section>
 <?php
