@@ -29,7 +29,7 @@ This repository contains all the necessary files and configurations to deploy an
 
 ## Alternative Hosting Approach
 
-WebAssembly: The project could be hosted on static file providers using WebAssembly to run PHP. This method may be slower and less private compared to server-side execution, but it is a cost-effective way to showcase similar project.
+WebAssembly: The project could be hosted on static file providers using WebAssembly to run PHP. This method may be slower and less private compared to server-side execution, but it is a cost-effective way to showcase similar project. In the future, I'd like to add a github action to publish the website to github page using this method in order to enable fast previews / testings.
 
 ---
 
