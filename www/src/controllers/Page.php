@@ -8,6 +8,7 @@ class Page
     {
         $page = match($parts[0]) {
             'robots.txt' => "robots.txt",
+            'sitemap.xml' => "sitemap.xml",
             'login'       => TEMPLATE_ROOT ."login.php",
             'roadmap'     =>TEMPLATE_ROOT . "roadmap.php",
             default   => TEMPLATE_ROOT ."home.php"
