@@ -6,38 +6,40 @@ ob_start();
 ?>
 <section id="accueil">
   <h1>Bienvenue !</h1>
-  <p>Découvrez mon univers et explorez mes projets.</p>
-  <address id="contact">
-    <ul>
-      <li><a href="#contact">Contactez moi</a></li>
-      <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
-      <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
-      <li><a href="https://github.com/DesignThinkerer">github</a></li>
-    </ul>
-  </address>
+  <p>
+    Je suis Théophile, infographiste et développeur web.  Ce site est <a href="/projets/portfolio">mon portfolio</a>. Vous y trouverez mes <a href="#projets">projets</a>, mes <a href="#apropos">compétences</a> et <a href="#contact">mes coordonnées</a>.
+    Vous avez un projet ? <a href="#contact">Parlons-en !</a>
+  </p>
 </section>
 
 <section id="projets">
   <h2>Projets</h2>
   <article>
-    <h3>Projet 1</h3>
-    <p>Un projet de qualité</p>
+    <h3>Portfolio theophile.dev</h3>
+    <p>Site en cours de construction, codé from scratch en PHP</p>
+    <a href="/projets/portfolio">Plus d'infos</a>
   </article>
-  <article>
-    <h3>Projet 2</h3>
-    <p>Un projet de qualité</p>
-  </article>
-</section>
-<section id="mission">
-  <h3>ma vocation</h3>
-  <p>Passer des idées au concrets.</p>
+  <!-- <article>
+    <h3>Webisu</h3>
+    <p>Application de gestion de tâches réalisé avec Léa et Lunao durant un workshop organisé par l'ifapme</p>
+    <a href="https://webisu.be/">Plus d'infos</a>
+  </article> -->
 </section>
 <section id="apropos">
   <article>
-    <h2><b>Théophile</b></h2>
-    <h3>Infographiste</h3>
-    <p>J'adore transmettre mes connaissances et créer des expériences captivantes et accessibles.</p>
-    <address><a href="mailto:hello@theophile.dev">Contactez-moi : hello@theophile.dev</a></address>
+    <hgroup>
+      <h2><b>Théophile</b></h2>
+      <h3>Infographiste</h3>
+    </hgroup>
+    <p><em>Ma vocation:</em> Passer des idées au concrets, transmettre mes connaissances et créer des expériences captivantes et accessibles 👨‍💻</p>
+    <address>
+    <ul>
+      <li><a href="mailto:hello@theophile.dev">hello@theophile.dev</a></li>
+      <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
+      <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
+      <li><a href="https://github.com/DesignThinkerer">github</a></li>
+    </ul>
+  </address>
   </article>
 </section>
 

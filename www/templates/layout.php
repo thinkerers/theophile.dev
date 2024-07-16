@@ -66,9 +66,9 @@ if(isset($scripts)){
   -->
     <button title="Afficher la navigation"></button>
     <ul>
-      <li><a href="#projets" title="Mes créations">projets</a></li>
-      <li><a href="#apropos" title="Mon histoire">à propos</a></li>
-      <li><a href="#contact" title="Travaillons ensemble!">contact</a></li>
+      <li><a href="/#projets" title="Mes créations">projets</a></li>
+      <li><a href="/#apropos" title="Mon histoire">à propos</a></li>
+      <li><a href="/#contact" title="Travaillons ensemble!">contact</a></li>
     </ul>
   </nav>
 </header>

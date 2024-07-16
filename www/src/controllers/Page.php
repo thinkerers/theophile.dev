@@ -7,8 +7,7 @@ class Page
     public function render(array $parts)
     {
         $page = match($parts[0]) {
-            'login'       => TEMPLATE_ROOT ."login.php",
-            'roadmap'     =>TEMPLATE_ROOT . "roadmap.php",
+            'projets'     =>TEMPLATE_ROOT . "project.php",
             default   => TEMPLATE_ROOT ."home.php"
         };
 

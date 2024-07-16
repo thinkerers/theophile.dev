@@ -1,0 +1,12 @@
+form[name="tasks"] {
+   display: grid;
+   margin:initial;
+   grid-template-columns: min-content 1fr;
+   grid-gap:0;
+   label{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: subgrid;
+    align-items: center;
+   }
+}
