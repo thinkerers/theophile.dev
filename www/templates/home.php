@@ -28,7 +28,7 @@ ob_start();
 <section id="apropos">
   <hgroup>
         <h2>Théophile</h2>
-        <b>Infographiste</b>
+        <p>Infographiste</p>
       </hgroup>
       <p><em>Ma vocation:</em> Passer des idées au concrets, transmettre mes connaissances et créer des expériences captivantes et accessibles 👨‍💻</p>
       <address>
