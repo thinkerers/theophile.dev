@@ -220,7 +220,12 @@
                 border: none;
             }
         }
-
+        & label:has([type="radio"]){
+            line-height: 2lh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
         & input:not([type="radio"], [type="submit"]),
         & textarea {
             background: transparent;
