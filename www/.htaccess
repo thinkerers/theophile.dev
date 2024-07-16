@@ -2,23 +2,25 @@ RewriteEngine On
 RewriteBase /
 
 # Force HTTPS (Redirect all HTTP traffic to HTTPS)
-RewriteCond %{HTTPS} !on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Check if the request is trying to access a folder outside of /public
+# Prevent Directory Listing (Security)
+Options -Indexes
+
+# Redirect all requests to the /public folder
 RewriteCond %{REQUEST_URI} !^/public/
-RewriteRule ^(.*)$ /public/index.php [L]
+RewriteRule ^(.*)$ /public/$1 [L]
 
-# Check if the request is for an existing file or directory within /public
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^public/ - [L]
-
-# Redirect all other requests to /public/index.php
+# Front Controller Pattern for Cleaner URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^public/.*$ /public/index.php [L]
+
 
 # Custom error page
 ErrorDocument 500 /public/error.php
+
 
 <IfModule mod_headers.c>
     AddDefaultCharset UTF-8
@@ -36,7 +38,7 @@ ErrorDocument 500 /public/error.php
     Header set Cross-Origin-Resource-Policy "same-origin"
     
     # Cache static assets for 1 year
-    <FilesMatch "\.(jpg|jpeg|png|gif|svg|css|js|woff|woff2|ttf|eot)$">
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|css|js|woff|woff2|ttf|eot)$">
         Header set Cache-Control "max-age=31536000, public, immutable"
     </FilesMatch>
 
