@@ -8,7 +8,7 @@ data-transition="<?php echo $transition ?? '' ;?>"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Découvrez le portfolio de Théophile, un développeur web front-end mettant en avant des performances web de premier ordre, l'accessibilité, les meilleures pratiques et le SEO. Contactez pour une collaboration ou consultez le rapport HTTP Observatory.">
   <title><?= $title ?? 'Théophile - Dev web front end' ?></title>
-  <link rel="preload stylesheet" href="<?php echo '/public/css/styles.css';?>" as="style">
+  <link rel="preload stylesheet" href="<?php echo '/public/css/styles.v0.css';?>" as="style">
   <link rel="icon" href="<?php echo '/public/img/favicon.svg';?>">
   <script type="application/ld+json">
     {
