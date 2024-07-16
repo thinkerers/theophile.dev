@@ -1,15 +1,27 @@
+<?php 
+$stylesheets = [
+  '/public/css/styles.v0.css',
+];
+
+if(isset($styles)){
+  $stylesheets = array_merge($stylesheets, $styles);
+}
+
+?>
 <!DOCTYPE html>
 <html
 lang="fr"
-data-transition="<?php echo $transition ?? '' ;?>"
+data-transition="<?= $transition ?? '' ;?>"
 >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvrez le portfolio de Théophile, un développeur web front-end mettant en avant des performances web de premier ordre, l'accessibilité, les meilleures pratiques et le SEO. Contactez pour une collaboration ou consultez le rapport HTTP Observatory.">
+  <meta name="description" content="Portfolio de Théophile, développeur web front-end.">
   <title><?= $title ?? 'Théophile - Dev web front end' ?></title>
-  <link rel="preload stylesheet" href="<?php echo '/public/css/styles.v0.css';?>" as="style">
-  <link rel="icon" href="<?php echo '/public/img/favicon.svg';?>">
+  <?php foreach($stylesheets as $stylesheet): ?>
+    <link rel="preload stylesheet" href="<?= $stylesheet; ?>"  as="style">
+  <?php endforeach; ?>
+  <link rel="icon" href="<?= '/public/img/favicon.svg';?>">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,6 +41,16 @@ data-transition="<?php echo $transition ?? '' ;?>"
       }
     }
   </script>
+<?php 
+
+if(isset($scripts)){
+  foreach($scripts as $script) {
+    ?>
+      <script src="<?= $script["src"]; ?>" type="<?= $script["type"]; ?>"></script>
+    <?php 
+  }
+}
+?>
 </head>
 <body>
 <header>
