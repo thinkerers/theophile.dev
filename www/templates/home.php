@@ -7,7 +7,14 @@ ob_start();
 <section id="accueil">
   <h1>Bienvenue !</h1>
   <p>Découvrez mon univers et explorez mes projets.</p>
-  <p><a href="#contact">Entrons en contact</a></p>
+  <address id="contact">
+    <ul>
+      <li><a href="#contact">Contactez moi</a></li>
+      <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
+      <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
+      <li><a href="https://github.com/DesignThinkerer">github</a></li>
+    </ul>
+  </address>
 </section>
 
 <section id="projets">
