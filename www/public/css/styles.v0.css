@@ -113,6 +113,18 @@
     }
 }
 
+@layer accessibility{
+    :root{
+        --touch-target-size: 24px;
+    }
+
+    :any-link, input{
+        display: inline-block;
+        min-block-size: var(--touch-target-size);
+        min-inline-size: var(--touch-target-size);
+    }
+}
+
 @layer layout {
     body {
         position: relative;
