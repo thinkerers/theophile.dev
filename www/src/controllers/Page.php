@@ -7,11 +7,12 @@ class Page
     public function render(array $parts)
     {
         $page = match($parts[0]) {
-            'login'       => "login.php",
-            'roadmap'     => "roadmap.php",
-            default   => "home.php"
+            'robots.txt' => "robots.txt",
+            'login'       => TEMPLATE_ROOT ."login.php",
+            'roadmap'     =>TEMPLATE_ROOT . "roadmap.php",
+            default   => TEMPLATE_ROOT ."home.php"
         };
 
-        require_once(TEMPLATE_ROOT . $page);
+        require_once($page);
     }
 }
