@@ -66,9 +66,9 @@ ob_start();
       <label><input type="radio" name="budget" value="30000"><span>&gt;30 000 &euro;</span></label>
       <label><input type="radio" name="budget" value="?"><span>Je ne sais pas</span></label>
     </fieldset>
-    <label>Nom<input type="text" name="nom" required></label>
-    <label>Entreprise<input type="text" name="entreprise" required></label>
-    <label>Email<input type="email" name="email" required></label>
+    <label>Nom<input type="text" name="nom" autocomplete="name" required></label>
+    <label>Entreprise<input type="text" name="entreprise" autocomplete="organization" required></label>
+    <label>Email<input type="email" name="email" autocomplete="email"  required></label>
     <input type="submit" value="C'est parti !" disabled title="WIP, si vous voulez me contacter envoyez moi un mail a hello@theophile.dev">
   </form>
 </section>

@@ -81,7 +81,7 @@ AddDefaultCharset utf-8
   Header set Cross-Origin-Embedder-Policy "require-corp"
   Header set Cross-Origin-Opener-Policy "same-origin"
   Header set Cross-Origin-Resource-Policy "same-origin"
-  
+
   # Cache static assets for 1 year
   <FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|css|js|woff|woff2|ttf|eot)$">
     Header set Cache-Control "max-age=31536000, public, immutable"
@@ -91,4 +91,5 @@ AddDefaultCharset utf-8
   <FilesMatch "\.html$">
     Header set Cache-Control "max-age=3600, public"
   </FilesMatch>
+  
 </IfModule>
