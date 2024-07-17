@@ -1,6 +1,6 @@
 <?php 
 $stylesheets = [
-  '/public/css/styles.v0.1.0.css',
+  '/public/css/styles.v0.1.1.css',
 ];
 
 if(isset($styles)){
