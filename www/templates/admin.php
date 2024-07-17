@@ -9,8 +9,3 @@ foreach($this->db->getTables() as $table) {
     print_r($this->db->getRows($table)[0] ?? []);
     echo "</pre>";
 }
-
-echo "<h2>Log file</h2>";
-echo "<pre>";
-
-echo file_get_contents(LIB_ROOT."Logger.log");
