@@ -99,33 +99,5 @@ AddDefaultCharset utf-8
 </IfModule>
 
 <IfModule mod_expires.c>
-  ExpiresActive on
-
-  # Default cache expiration
-  ExpiresDefault "access plus 1 year"
-
-  # Specific cache rules
-  ExpiresByType text/cache-manifest "access plus 0 seconds"
-
-  <Files "favicon.svg">
-    ExpiresByType image/svg+xml "access plus 1 hour"
-  </Files>
-
-  ExpiresByType application/atom+xml "access plus 1 hour"
-  ExpiresByType application/rdf+xml "access plus 1 hour"
-  ExpiresByType application/rss+xml "access plus 1 hour"
-  ExpiresByType application/json "access plus 0 seconds"
-  ExpiresByType application/ld+json "access plus 0 seconds"
-  ExpiresByType application/schema+json "access plus 0 seconds"
-  ExpiresByType application/vnd.geo+json "access plus 0 seconds"
-  ExpiresByType text/xml "access plus 0 seconds"
-  ExpiresByType text/html "access plus 0 seconds"
-
-  # Add `immutable` to Cache-Control for all resources, then remove for specific file types
-  <IfModule mod_headers.c>
-    Header merge Cache-Control immutable
-    <FilesMatch "\.(appcache|cur|geojson|ico|json(ld)?|x?html?|topojson|xml)$">
-      Header edit Cache-Control immutable ""
-    </FilesMatch>
-  </IfModule>
+    ExpiresActive Off
 </IfModule>
