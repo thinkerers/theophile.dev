@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 define('APP_ROOT', dirname(__FILE__, 2));
 require APP_ROOT . '/config/config.php';
 

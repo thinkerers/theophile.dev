@@ -6,6 +6,9 @@ ob_start();
 ?>
 <section id="accueil">
   <h1>Bienvenue !</h1>
+  <figure>
+        <img src="/public/img/hello.svg" alt="hello!" width="200" height="200">
+  </figure>
   <p>
     Je suis Théophile, infographiste et développeur web.  Ce site est <a href="/projets/portfolio">mon portfolio</a>. Vous y trouverez mes <a href="#projets">projets</a>, mes <a href="#apropos">compétences</a> et <a href="#contact">mes coordonnées</a>.
     Vous avez un projet ? <a href="#contact">Parlons-en !</a>

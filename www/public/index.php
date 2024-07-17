@@ -1,10 +1,10 @@
 <?php
 require_once '../src/bootstrap.php';
 
-$page = new src\controllers\Page();
-
 $request = trim(mb_strtolower($_SERVER['REQUEST_URI']), '/');
 $parts = explode('/', $request);
+$page = new src\controllers\Page();
+
 
 try {    
     $page->render($parts);
