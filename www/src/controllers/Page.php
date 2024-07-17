@@ -6,7 +6,7 @@ use \src\model\Database;
 class Page
 {
     public function __construct(
-        private ?Database $db = null
+        public ?Database $db = null
     ) {
         $this->db ??= new Database();
     }
