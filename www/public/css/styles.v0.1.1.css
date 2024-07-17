@@ -41,8 +41,8 @@
 
     header {
         background: var(--secondary-transparent-color);
-        backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
 
         & figure {
             font-size: var(--big-font-size);

@@ -82,6 +82,9 @@ AddDefaultCharset utf-8
   Header set Cross-Origin-Opener-Policy "same-origin"
   Header set Cross-Origin-Resource-Policy "same-origin"
 
+  Header unset X-Powered-By
+  Header unset Pragma
+
   # Cache static assets for 1 year
   <FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|css|js|woff|woff2|ttf|eot)$">
     Header set Cache-Control "max-age=31536000, public, immutable"
