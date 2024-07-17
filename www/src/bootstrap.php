@@ -1,5 +1,6 @@
 <?php
 header_remove("X-Powered-By");
+header_remove("Pragma");
 
 session_set_cookie_params([
     'lifetime' => 600,
