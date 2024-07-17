@@ -1,0 +1,4 @@
+[2024-07-17 13:00:31] [info]: Database connection established.
+	Called from: C:\laragon\www\theophile.dev\www\src\model\Database.php on line 23 in function logMessage
+[2024-07-17 13:00:31] [info]: Database connection established.
+	Called from: C:\laragon\www\theophile.dev\www\src\model\Database.php on line 23 in function logMessage

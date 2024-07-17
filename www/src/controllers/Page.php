@@ -14,6 +14,7 @@ class Page
     public function render(array $parts)
     {
         $page = match($parts[0]) {
+            'admin'     =>  "admin.php",
             'projets'   =>  "project.php",
             default     => "home.php"
         };
