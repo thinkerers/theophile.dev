@@ -1,18 +1,22 @@
 <?php
 $title = 'Bienvenue !';
-$transition="start";
+$transition = "start";
 
 ob_start();
 ?>
 <section id="accueil">
   <h1>Salut !</h1>
   <figure>
-          <img src="/public/img/hello.svg" alt="hello!" width="200" height="200">
-    </figure>
-  <p>
-    Je suis Théophile, infographiste et développeur web.  Ce site est <a href="/projets/portfolio">mon portfolio</a>. Vous y trouverez mes <a href="#projets">projets</a>, mes <a href="#apropos">compétences</a> et <a href="#contact">mes coordonnées</a>.
-    Vous avez un projet ? <a href="#contact">Parlons-en !</a>
-  </p>
+    <img src="/public/img/hello.svg" alt="hello!" width="200" height="200">
+  </figure>
+  <aside>
+    <p>
+      Je suis Théophile, infographiste et développeur web. Ce site est <a href="/projets/portfolio">mon portfolio</a>. Vous y trouverez mes <a href="#projets">projets</a>, mes <a href="#apropos">compétences</a> et <a href="#contact">mes coordonnées</a>.
+    </p>
+    <p>
+      Vous avez un projet ? <a href="#contact">Parlons-en !</a>
+    </p>
+  </aside>
 </section>
 
 <section id="projets">
@@ -30,18 +34,18 @@ ob_start();
 </section>
 <section id="apropos">
   <hgroup>
-        <h2>Théophile</h2>
-        <p>Infographiste</p>
-      </hgroup>
-      <p><em>Ma vocation:</em> Passer des idées au concrets, transmettre mes connaissances et créer des expériences captivantes et accessibles 👨‍💻</p>
-      <address>
-      <ul>
-        <li><a href="mailto:hello@theophile.dev">hello@theophile.dev</a></li>
-        <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
-        <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
-        <li><a href="https://github.com/DesignThinkerer">github</a></li>
-      </ul>
-    </address>
+    <h2>Théophile</h2>
+    <p>Infographiste</p>
+  </hgroup>
+  <p><em>Ma vocation:</em> Passer des idées au concrets, transmettre mes connaissances et créer des expériences captivantes et accessibles 👨‍💻</p>
+  <address>
+    <ul>
+      <li><a href="mailto:hello@theophile.dev">hello@theophile.dev</a></li>
+      <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
+      <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
+      <li><a href="https://github.com/DesignThinkerer">github</a></li>
+    </ul>
+  </address>
 </section>
 
 <section id="contact">
@@ -70,5 +74,5 @@ ob_start();
 </section>
 <?php
 $content = ob_get_clean();
-require_once(TEMPLATES_ROOT .'layout.php');
+require_once(TEMPLATES_ROOT . 'layout.php');
 ?>
