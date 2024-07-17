@@ -9,22 +9,16 @@ The documentation for this project can be found here: [Project: Portfolio](https
 
 ## Overview
 
-This repository contains all the necessary files and configurations to deploy and maintain the website. The main aspects of the project are outlined below:
-
-## Hosting and Domain
-
 * Hosting Provider: OVH (Free 100MB hosting plan, PHP 8.3.7)
 * Database: SQLite (due to the limitations of the free hosting plan)
 * Image Hosting: Cloudflare (Free tier)
 * Domain Registration and DNS Anycast: €50.75 for 3 years (€1.41/month)
-
-## Key Features
-
-* PHP 8.3.7: The website is built using the latest version of PHP supported by OVH's hosting plan.
-* SQLite: Utilized for storing articles, SEO keywords, comments, and other data.
-* Cloudflare: Used for hosting images to ensure fast loading times.
 * GitHub Actions: Automates deployment from the GitHub repository to the FTP server.
 
-## Alternative Hosting Approach
+## Tools used for code quality audit
 
-WebAssembly: The project could be hosted on static file providers using WebAssembly to run PHP. This method may be slower and less private compared to server-side execution, but it is a cost-effective way to showcase similar project. In the future, I'd like to add a github action to publish the website to github page using this method in order to enable fast previews / testings.
+* https://webhint.io/
+* https://developer.mozilla.org/en-US/observatory
+* https://pagespeed.web.dev/
+  
+TODO: automate validation process
