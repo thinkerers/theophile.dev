@@ -97,7 +97,3 @@ AddDefaultCharset utf-8
     Header set Cache-Control "max-age=3600, public"
   </FilesMatch>
 </IfModule>
-
-<IfModule mod_expires.c>
-    ExpiresActive Off
-</IfModule>
