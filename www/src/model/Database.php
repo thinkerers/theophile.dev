@@ -11,7 +11,7 @@ use src\lib\LogLevels;
  */
 class Database extends \SQLite3 {
     function __construct(
-        private ?Logger $logger = new Logger()
+        public ?Logger $logger = new Logger()
     ) {
         try {
             $this->open(DB_PATH);
@@ -32,7 +32,7 @@ class Database extends \SQLite3 {
      * @param object|null $dump The object to dump
      * @throws \Exception If the object to dump is invalid.
      */
-    private function logMessage(string $message, LogLevels $logLevel = LogLevels::INFO): void
+    public function logMessage(string $message, LogLevels $logLevel = LogLevels::INFO): void
     {
         $this->logger->logMessage($message, $logLevel);
     }
