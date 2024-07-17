@@ -56,19 +56,20 @@ ErrorDocument 500 /public/error.php
   # Other
   AddType text/vtt vtt
 
-  AddCharset utf-8  .appcache
-  AddCharset utf-8  .atom
-  AddCharset utf-8  .css
-  AddCharset utf-8  .js
-  AddCharset utf-8  .json
-  AddCharset utf-8  .manifest
-  AddCharset utf-8  .map
-  AddCharset utf-8  .mjs
-  AddCharset utf-8  .rdf
-  AddCharset utf-8  .rss
-  AddCharset utf-8  .vtt
-  AddCharset utf-8  .webmanifest
-  AddCharset utf-8  .xml
+  AddCharset utf-8  .svg \
+                    .appcache \
+                    .atom \
+                    .css \
+                    .js \
+                    .json \
+                    .manifest \
+                    .map \
+                    .mjs \
+                    .rdf \
+                    .rss \
+                    .vtt \
+                    .webmanifest \
+                    .xml
 </IfModule>
 
 # Serve all resources labeled as `text/html` or `text/plain` with UTF-8 charset.

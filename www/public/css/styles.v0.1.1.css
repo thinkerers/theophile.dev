@@ -35,6 +35,10 @@
         --github-icon: url("../img/github.svg");
     }
 
+    :lang(fr-FR){
+        quotes: "«" "»" "‹" "›";
+    }
+
     body {
         font-family: var(--text-font-family);
     }
