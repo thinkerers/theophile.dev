@@ -41,7 +41,7 @@ ob_start();
   </label>
   <label>
     <input name="task" type="checkbox" checked disabled>
-    <span><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=theophile.dev">HTTP Observatory Report</a>: Score: 135 / 100
+    <span><a href="https://developer.mozilla.org/en-US/observatory/analyze?host=theophile.dev">HTTP Observatory Report</a>: Score: 140 / 100
     </span>
   </label>
 </form>
