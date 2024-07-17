@@ -9,10 +9,8 @@ The documentation for this project can be found here: [Project: Portfolio](https
 
 ## Overview
 
-* Hosting Provider: OVH (Free 100MB hosting plan, PHP 8.3.7)
+* Domain Registration + Hosting Provider: OVH (Free 100MB hosting plan, approx. €1.40 /month)
 * Database: SQLite (due to the limitations of the free hosting plan)
-* Image Hosting: Cloudflare (Free tier)
-* Domain Registration and DNS Anycast: €50.75 for 3 years (€1.41/month)
 * GitHub Actions: Automates deployment from the GitHub repository to the FTP server.
 
 ## Tools used for code quality audit
