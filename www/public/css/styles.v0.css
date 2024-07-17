@@ -461,6 +461,21 @@
     }
 }
 
+#accueil{
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+    h1{
+        width: 100%;
+    }
+    p{
+        flex-grow: 1;
+        flex-basis: 200px;
+        max-width: 500px;
+    }
+}
+
 #projets{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
