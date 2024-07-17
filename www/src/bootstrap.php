@@ -6,9 +6,12 @@ session_set_cookie_params([
     'path' => '/',
     'domain' => '.theophile.dev',
     'secure' => true,
-    'httponly' => true
+    'httponly' => true,
+    'samesite' => 'Strict'
 ]);
-  
+
+session_name('__Secure-PHPSESSID');
+
 session_start();
 
 define('APP_ROOT', dirname(__FILE__, 2));
