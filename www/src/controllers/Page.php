@@ -1,16 +1,23 @@
 <?php
 
 namespace src\controllers;
+use \src\model\Database;
 
 class Page
 {
+    public function __construct(
+        private ?Database $db = null
+    ) {
+        $this->db ??= new Database();
+    }
+
     public function render(array $parts)
     {
         $page = match($parts[0]) {
-            'projets'     =>TEMPLATE_ROOT . "project.php",
-            default   => TEMPLATE_ROOT ."home.php"
+            'projets'   =>  "project.php",
+            default     => "home.php"
         };
 
-        require_once($page);
+        require_once(TEMPLATES_ROOT . $page);
     }
 }

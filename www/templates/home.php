@@ -67,5 +67,5 @@ ob_start();
 </section>
 <?php
 $content = ob_get_clean();
-require_once(TEMPLATE_ROOT .'layout.php');
+require_once(TEMPLATES_ROOT .'layout.php');
 ?>
