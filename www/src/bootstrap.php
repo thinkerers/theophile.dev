@@ -1,4 +1,6 @@
 <?php
+header_remove("X-Powered-By");
+
 session_start();
 
 define('APP_ROOT', dirname(__FILE__, 2));
