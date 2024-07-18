@@ -19,6 +19,11 @@ class Logger
         if (!$this->logFilePath) {
             $this->logFilePath = $this->getDefaultLogFilePath();
         }
+
+        // Check if log file exists and if it's empty
+        if (!file_exists($this->logFilePath) || filesize($this->logFilePath) === 0) {
+            $this->writeCsvHeaders();
+        }
     }
 
     private function getDefaultLogFilePath(): string
@@ -27,6 +32,23 @@ class Logger
         $callingClass = isset($backtrace[1]['class']) ? $backtrace[1]['class'] : 'default';
 
         return __DIR__ . '/' . basename(str_replace('\\', '/', $callingClass)) . '.log';
+    }
+
+    private function writeCsvHeaders(): void
+    {
+        $headers = ['Timestamp', 'LogLevel', 'UserIP', 'Message', 'CallerFile', 'CallerLine', 'CallerFunction'];
+        
+        $logFileHandle = fopen($this->logFilePath, 'a');
+        if ($logFileHandle === false) {
+            error_log("Failed to open log file for writing headers: {$this->logFilePath}");
+            return;
+        }
+
+        if (fputcsv($logFileHandle, $headers) === false) {
+            error_log("Failed to write headers to log file: {$this->logFilePath}");
+        }
+
+        fclose($logFileHandle);
     }
 
     public function logMessage(string $message, LogLevels $logLevel = LogLevels::INFO): void
@@ -43,8 +65,7 @@ class Logger
         $callerLine = $caller['line'] ?? 'unknown line';
         $callerFunction = $caller['function'] ?? 'unknown function';
 
-        $logMessage = sprintf(
-            "[%s] [%s] [%s]: %s\n\tCalled from: %s on line %s in function %s\n",
+        $logEntry = [
             $timestamp,
             $logLevel->value,
             $this->getUserIP(),
@@ -52,11 +73,20 @@ class Logger
             $callerFile,
             $callerLine,
             $callerFunction
-        );
+        ];
+        
+        $logFileHandle = fopen($this->logFilePath, 'a');
 
-        if (file_put_contents($this->logFilePath, $logMessage, FILE_APPEND) === false) {
+        if ($logFileHandle === false) {
+            error_log("Failed to open log file: {$this->logFilePath}");
+            return;
+        }
+
+        if (fputcsv($logFileHandle, $logEntry) === false) {
             error_log("Failed to write to log file: {$this->logFilePath}");
         }
+
+        fclose($logFileHandle);
     }
 
     public function getUserIP() {
