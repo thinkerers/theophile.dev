@@ -5,7 +5,7 @@ This project showcases my (work in progress) portfolio website.
 
 ## Documentation
 
-The documentation for this project can be found here: [Project: Portfolio PHP&SQLite](https://thinkerers.github.io/theophile.dev/#:[created[20240203150245488]])
+The documentation for this project can be found here: [Project: Portfolio PHP&SQLite](https://learning-php-mysql.tiddlyhost.com/#:[created[20240203150245488]])
 
 ## Overview
 
