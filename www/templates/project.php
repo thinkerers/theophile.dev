@@ -13,6 +13,10 @@ ob_start();
 <form name="tasks">
   <label>
     <input name="task" type="checkbox" checked disabled>
+    (SEO) Linting des données structurées avec le <a href="http://linter.structured-data.org/?url=https:%2F%2Ftheophile.dev%2F">Structured Data Linter</a>
+  </label>
+  <label>
+    <input name="task" type="checkbox" checked disabled>
     <span>Utilisation de https://webhint.io pour améliorer le site.</span>
   </label>
   <label>
