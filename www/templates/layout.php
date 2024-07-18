@@ -51,6 +51,21 @@ if(isset($scripts)){
   }
 }
 ?>
+<!-- Open Graph Meta Tags -->
+<meta property="og:url" content="http://theophile.dev">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bienvenue !">
+<meta property="og:description" content="Portfolio de Théophile, développeur web front-end.">
+<meta property="og:image" content="/public/img/hello.svg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="theophile.dev">
+<meta property="twitter:url" content="http://theophile.dev">
+<meta name="twitter:title" content="Bienvenue !">
+<meta name="twitter:description" content="Portfolio de Théophile, développeur web front-end.">
+<meta name="twitter:image" content="">
+
 </head>
 <body>
 <header>
