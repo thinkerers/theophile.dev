@@ -1,11 +1,11 @@
 # theophile.dev
 [<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=0077b6">](https://github.com/SamKirkland/FTP-Deploy-Action)
 
-This project showcases my (work in progress) portfolio website hosted on OVH's free 100MB hosting plan, utilizing SQLite for database management and Cloudflare's free tier for image hosting. The website is built with PHP and will incorporates various features including article management, SEO keywords, and comments.
+This project showcases my (work in progress) portfolio website.
 
 ## Documentation
 
-The documentation for this project can be found here: [Project: Portfolio](https://learning-php-mysql.tiddlyhost.com/#:[created[20240203150245488]])
+The documentation for this project can be found here: [Project: Portfolio PHP&SQLite](https://thinkerers.github.io/theophile.dev/#:[created[20240203150245488]])
 
 ## Overview
 
