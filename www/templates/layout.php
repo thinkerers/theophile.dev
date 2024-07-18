@@ -56,7 +56,7 @@ if(isset($scripts)){
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bienvenue !">
 <meta property="og:description" content="Portfolio de Théophile, développeur web front-end.">
-<meta property="og:image" content="https://theophile.dev/public/img/hello.png">
+<meta property="og:image:secure_url" content="https://theophile.dev/public/img/hello.png">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
@@ -64,7 +64,7 @@ if(isset($scripts)){
 <meta property="twitter:url" content="http://theophile.dev">
 <meta name="twitter:title" content="Bienvenue !">
 <meta name="twitter:description" content="Portfolio de Théophile, développeur web front-end.">
-<meta name="twitter:image" content="https://theophile.dev/public/img/hello.png">
+<meta name="twitter:image:secure_url" content="https://theophile.dev/public/img/hello.png">
 
 </head>
 <body>
