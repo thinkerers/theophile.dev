@@ -51,20 +51,20 @@ if(isset($scripts)){
   }
 }
 ?>
-<!-- Open Graph Meta Tags -->
-<meta property="og:url" content="http://theophile.dev">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bienvenue !">
-<meta property="og:description" content="Portfolio de Théophile, développeur web front-end.">
-<meta property="og:image:secure_url" content="https://theophile.dev/public/img/hello.png">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:url" content="https://www.theophile.dev">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bienvenue !">
+  <meta property="og:description" content="Portfolio de Théophile, développeur web front-end.">
+  <meta property="og:image" content="https://theophile.dev/public/img/hello.png">
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="theophile.dev">
-<meta property="twitter:url" content="http://theophile.dev">
-<meta name="twitter:title" content="Bienvenue !">
-<meta name="twitter:description" content="Portfolio de Théophile, développeur web front-end.">
-<meta name="twitter:image:secure_url" content="https://theophile.dev/public/img/hello.png">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="theophile.dev">
+  <meta property="twitter:url" content="https://www.theophile.dev">
+  <meta name="twitter:title" content="Bienvenue !">
+  <meta name="twitter:description" content="Portfolio de Théophile, développeur web front-end.">
+  <meta name="twitter:image" content="https://theophile.dev/public/img/hello.png">
 
 </head>
 <body>
