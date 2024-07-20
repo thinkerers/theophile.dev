@@ -58,14 +58,14 @@ ob_start();
       <textarea autofocus name="projet" placeholder="Je souhaite créer..." required></textarea>
     </label>
 
-    <fieldset>
+    <!-- <fieldset>
       <legend>Budget</legend>
       <label><input type="radio" name="budget" value="5000"><span>&lt;5 000 &euro;</span></label>
       <label><input type="radio" name="budget" value="10000"><span>&lt;10 000 &euro;</span></label>
       <label><input type="radio" name="budget" value="20000"><span>&lt;20 000 &euro;</span></label>
       <label><input type="radio" name="budget" value="30000"><span>&gt;30 000 &euro;</span></label>
       <label><input type="radio" name="budget" value="?"><span>Je ne sais pas</span></label>
-    </fieldset>
+    </fieldset> -->
     <label>Nom<input type="text" name="nom" autocomplete="name" required></label>
     <label>Entreprise<input type="text" name="entreprise" autocomplete="organization" required></label>
     <label>Email<input type="email" name="email" autocomplete="email"  required></label>
