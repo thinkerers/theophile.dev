@@ -18,7 +18,6 @@ Handcrafted with PHP, SQLite, Typescript and OpenProps. It was designed to be ho
 - 🔜 Typesafe
 - 🔜 PHPDoc
 - 🔜 Light/Dark Theme
-- 🔜 Shop
 - 🔜 Auto generated sitemap
 - 🔜 Auto generated RSS Feed
 - 🔜 Markdown support to quickly write articles
