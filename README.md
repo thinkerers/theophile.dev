@@ -1,14 +1,41 @@
-# theophile.dev
-[<img alt="Deployed with FTP Deploy Action" src="https://img.shields.io/badge/Deployed With-FTP DEPLOY ACTION-%3CCOLOR%3E?style=for-the-badge&color=0077b6">](https://github.com/SamKirkland/FTP-Deploy-Action)
+![theophile.dev](theophile.dev.png)
 
-This project showcases my (work in progress) portfolio website.
+theophile.dev is a dynamic, lightweight, lightning fast portfolio/blog website.
 
-## Documentation
+Handcrafted with PHP, SQLite, Typescript and OpenProps. It was designed to be hosted on [OVH's free web hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/).
+
+## 🚀 Deployed with FTP Deploy Action
+
+[<img alt="Status of deployment" src="https://github.com/thinkerers/theophile.dev/actions/workflows/main.yml/badge.svg">](https://github.com/SamKirkland/FTP-Deploy-Action)
+
+## 📋 Features
+
+- ✅ 100/100 Lighthouse performance
+- ✅ Responsive
+- ✅ Accessible
+- ✅ SEO-friendly
+- ✅ Animated UI
+- 🔳 Typesafe
+- 🔳 PHPDoc
+- 🔳 Light/Dark Theme
+- 🔳 Auto generated sitemap
+- 🔳 Auto generated RSS Feed
+- 🔳 Markdown support to quickly write articles
+- 🔳 Webmentions
+
+<!-- ## 💯 Lighthouse score
+![theophile.dev Lighthouse Score](_lighthouse.png) -->
+
+## 🕊️ Lightweight
+No frameworks or added bulk. Everything MUST fit under 100MB, content included.
+
+## ⚡︎ Fast
+Rendered in ~140ms on localhost
+
+## 📄 Configuration
 
 The documentation for this project can be found here: [Project: Portfolio PHP&SQLite](https://learning-php-mysql.tiddlyhost.com/#:[created[20240203150245488]])
 
-## Overview
+## 🏛️ License
 
-* Domain Registration + Hosting Provider: OVH (Free 100MB hosting plan, approx. €1.40 /month)
-* Database: SQLite (due to the limitations of the free hosting plan)
-* GitHub Actions: Automates deployment from the GitHub repository to the FTP server.
+MIT
