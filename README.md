@@ -32,9 +32,9 @@ No frameworks or added bulk. Everything MUST fit under 100MB, content included.
 ## ⚡︎ Fast
 Rendered in ~140ms on localhost
 
-## 📄 Configuration
+## 📄 Documentation
 
-The documentation for this project can be found here: [Project: Portfolio PHP&SQLite](https://learning-php-mysql.tiddlyhost.com/#:[created[20240203150245488]])
+[Project: Portfolio PHP&SQLite](https://learning-php-mysql.tiddlyhost.com/#:[created[20240203150245488]])
 
 ## 🏛️ License
 
