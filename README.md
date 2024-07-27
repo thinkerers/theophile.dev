@@ -4,7 +4,7 @@
 
 <!-- ![theophile.dev](theophile.dev.png) -->
 
-theophile.dev is a dynamic, lightweight, fast portfolio/blog website.
+theophile.dev is a dynamic, lightweight&fast portfolio website.
 
 Handcrafted with PHP, SQLite, Typescript and OpenProps. It was designed to be hosted on [OVH's free web hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/).
 
