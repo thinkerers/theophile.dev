@@ -1,6 +1,5 @@
 <!-- ## 🚀 Deployed with FTP Deploy Action -->
 
-[<img alt="Status of deployment" src="https://github.com/thinkerers/theophile.dev/actions/workflows/main.yml/badge.svg">](https://github.com/SamKirkland/FTP-Deploy-Action)
 
 <!-- ![theophile.dev](theophile.dev.png) -->
 
