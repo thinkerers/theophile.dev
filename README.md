@@ -6,7 +6,7 @@
 
 theophile.dev is a dynamic, lightweight&fast portfolio website.
 
-Handcrafted with PHP, SQLite, Typescript and OpenProps. It was designed to be hosted on [OVH's free web hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/).
+Handcrafted with PHP, SQLite, Typescript and OpenProps. It was designed to be hosted on [OVH's free web hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), and will be used as a template in the future.
 
 ## 📋 Features
 
@@ -18,6 +18,7 @@ Handcrafted with PHP, SQLite, Typescript and OpenProps. It was designed to be ho
 - 🔜 Typesafe
 - 🔜 PHPDoc
 - 🔜 Light/Dark Theme
+- 🔜 Shop
 - 🔜 Auto generated sitemap
 - 🔜 Auto generated RSS Feed
 - 🔜 Markdown support to quickly write articles
