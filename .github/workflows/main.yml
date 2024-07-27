@@ -4,7 +4,7 @@ on:
       - main
     paths:
       - 'www/**'
-name: 🚀 Deploy website on push inside the www folder
+name: 🚀 Deploy with FTP-Deploy-Action
 jobs:
   web-deploy:
     name: 🎉 Deploy
