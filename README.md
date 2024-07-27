@@ -15,13 +15,13 @@ Handcrafted with PHP, SQLite, Typescript and OpenProps. It was designed to be ho
 - ✅ Accessible
 - ✅ SEO-friendly
 - ✅ Animated UI
-- 🔳 Typesafe
-- 🔳 PHPDoc
-- 🔳 Light/Dark Theme
-- 🔳 Auto generated sitemap
-- 🔳 Auto generated RSS Feed
-- 🔳 Markdown support to quickly write articles
-- 🔳 Webmentions
+- 🔜 Typesafe
+- 🔜 PHPDoc
+- 🔜 Light/Dark Theme
+- 🔜 Auto generated sitemap
+- 🔜 Auto generated RSS Feed
+- 🔜 Markdown support to quickly write articles
+- 🔜 Webmentions
 
 <!-- ## 💯 Lighthouse score
 ![theophile.dev Lighthouse Score](_lighthouse.png) -->
