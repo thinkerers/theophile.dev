@@ -1,11 +1,9 @@
 <?php
 $title = 'Bienvenue !';
 $transition = "start";
-$styles = ['/public/css/gh-fork-ribbon.css'];
 
 ob_start();
 ?>
-<a class="github-fork-ribbon" href="https://github.com/thinkerers/theophile.dev" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
 <section id="accueil">
   <h1>Salut !</h1>
   <figure>
