@@ -10,3 +10,8 @@ Timestamp,LogLevel,UserIP,Message,CallerFile,CallerLine,CallerFunction
 "2024-07-23 19:13:05",info,127.0.0.1,"Database connection established.","C:\laragon\www\theophile.dev\www\src\model\Database.php",23,logMessage
 "2024-07-27 22:58:36",info,127.0.0.1,"Database connection established.","C:\laragon\www\theophile.dev\www\src\model\Database.php",23,logMessage
 "2024-07-27 22:58:48",info,127.0.0.1,"Database connection established.","C:\laragon\www\theophile.dev\www\src\model\Database.php",23,logMessage
+"2024-09-16 14:33:22",info,172.21.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-16 15:12:39",info,172.19.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-16 15:28:56",info,172.19.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-16 15:29:14",info,172.19.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-16 15:33:24",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
