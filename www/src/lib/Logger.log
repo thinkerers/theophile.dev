@@ -15,3 +15,9 @@ Timestamp,LogLevel,UserIP,Message,CallerFile,CallerLine,CallerFunction
 "2024-09-16 15:28:56",info,172.19.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
 "2024-09-16 15:29:14",info,172.19.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
 "2024-09-16 15:33:24",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-16 19:46:13",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-16 19:52:16",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-16 20:16:41",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-17 10:48:30",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-17 10:48:58",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
+"2024-09-17 10:50:21",info,172.18.0.1,"Database connection established.",/var/www/html/www/src/model/Database.php,21,logMessage
