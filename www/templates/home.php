@@ -41,18 +41,15 @@ ob_start();
   <address>
     <ul>
       <li><a href="mailto:hello@theophile.dev">hello@theophile.dev</a></li>
-      <li><a href="http://codepen.io/DesignThinkerer">codepen</a></li>
-      <li><a href="https://github.com/DesignThinkerer">github</a></li>
-      <li><a href="https://www.reddit.com/user/DesignThinkerer/">reddit</a></li>
+      <li><a href="http://codepen.io/DesignThinkerer">Codepen</a></li>
+      <li><a href="https://github.com/DesignThinkerer">Github</a></li>
+      <li><a href="https://www.reddit.com/user/DesignThinkerer/">Reddit</a></li>
       <li><a href="https://www.linkedin.com/in/DesignThinkerer">LinkedIn</a></li>
-      <li><a href="https://twitter.com/home?lang=en">Twitter</a></li>
-      <li><a href="https://www.behance.net/">Behance</a></li>
-      <li><a href="https://dribbble.com/">Dribbble</a></li>
+      <li><a href="https://twitter.com/DesignThinkerer">Twitter</a></li>
+      <li><a href="https://www.behance.net/DesignThinkerer">Behance</a></li>
+      <li><a href="https://dribbble.com/DesignThinkerer">Dribbble</a></li>
       <li><a href="https://designthinkerer.medium.com/">Medium</a></li>
       <li><a href="https://creativemarket.com/DesignThinkerer?u=DesignThinkerer">Creative Market</a></li>
-      <li><a href="https://medium.com/@DesignThinkerer">Medium</a></li>
-      <li><a href="https://www.behance.net/DesignThinkerer"></a>Behance</li>
-      <li><a href="https://www.linkedin.com/in/DesignThinkerer">LinkedIn</a></li>
     </ul>
   </address>
 </section>
