@@ -41,9 +41,18 @@ ob_start();
   <address>
     <ul>
       <li><a href="mailto:hello@theophile.dev">hello@theophile.dev</a></li>
-      <li><a href="https://docs.google.com/presentation/d/12qON9WzkUSGHv9LRzEdK1zckqqabfpfLK1-vlNeaQ9k/preview?slide=id.g706ef3ee9b_8_88">portfolio infographie</a></li>
-      <li><a href="https://codepen.io/collection/Rzvekr">codepen</a></li>
+      <li><a href="http://codepen.io/DesignThinkerer">codepen</a></li>
       <li><a href="https://github.com/DesignThinkerer">github</a></li>
+      <li><a href="https://www.reddit.com/user/DesignThinkerer/">reddit</a></li>
+      <li><a href="https://www.linkedin.com/in/DesignThinkerer">LinkedIn</a></li>
+      <li><a href="https://twitter.com/home?lang=en">Twitter</a></li>
+      <li><a href="https://www.behance.net/">Behance</a></li>
+      <li><a href="https://dribbble.com/">Dribbble</a></li>
+      <li><a href="https://designthinkerer.medium.com/">Medium</a></li>
+      <li><a href="https://creativemarket.com/DesignThinkerer?u=DesignThinkerer">Creative Market</a></li>
+      <li><a href="https://medium.com/@DesignThinkerer">Medium</a></li>
+      <li><a href="https://www.behance.net/DesignThinkerer"></a>Behance</li>
+      <li><a href="https://www.linkedin.com/in/DesignThinkerer">LinkedIn</a></li>
     </ul>
   </address>
 </section>
